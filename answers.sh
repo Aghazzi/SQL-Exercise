@@ -35,3 +35,13 @@ SELECT companies.name
 FROM employees
 INNER JOIN companies ON employees.Company = companies.name
 WHERE employees.Role="Graphic Designer";
+
+SELECT name, max(Points) FROM students
+
+SELECT avg(Points) FROM students
+
+SELECT count(ID) FROM students WHERE Points=500;
+
+SELECT Name FROM students WHERE name LIKE '%s%';
+
+SELECT * FROM students ORDER BY Points DESC;
